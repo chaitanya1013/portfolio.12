@@ -208,18 +208,35 @@ section {
     display: flex;
     align-items: center;
     padding: 20px 12% 10px;
-    margin: 170px 5px 10px 54px;
+    margin: 170px 5px 10px 45px;
 }
 
 .home-content{
     max-width: 600px;
+    border: 1px solid whitesmoke;
+    border-radius: 10%;
+    padding: 70px;
+    transition: all 0.6s ease;
+}
+
+.home-content:hover{
+    background-color: var(--nav-bg0);
+    transform: scale(1.05);
+    box-shadow: 0 0 2px #1e2f58, 0 0 1px #1e2f58, 0 0 20px #1e2f58, 0 0 40px #1e2f58, 0 0 20px #1e2f58;
+}
+
+.home-content:active{
+    transform: scale(0.98);
 }
 
 .home-content h1{
     font-size: 45px;
     font-weight: 500;
     padding-left: 2px;
-    cursor: pointer;
+}
+
+.home-content h1:hover{
+    transform: scale(1.03);
 }
 
 .home-content h4{
@@ -228,15 +245,22 @@ section {
     padding-left: 5px;
 }
 
+.home-content h4:hover{
+    transform: scale(1.02);
+}
+
 .home-content p{
     font-size: 20px;
     font-weight: 500;
     padding-left: 5px;
 }
 
+.home-content p:hover{
+    transform: scale(1.02);
+}
+
 .social-top{
     padding: 12px;
-    margin-left: 20px;
     margin-top: 8px;
     position: relative;
     justify-content: space-between;
@@ -244,6 +268,31 @@ section {
     display: flex;
     align-items: center;
     background: var(--dark);
+}
+
+.social-top a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 20px;
+    color: whitesmoke;
+    text-decoration: none;
+    transition: all 0.6s ease;
+}
+
+.social-top a:hover{
+    background-color: var(--nav-bg0);
+    transform: scale(1.05);
+    box-shadow: 0 0 2px #1e2f58, 0 0 1px #1e2f58, 0 0 20px #1e2f58, 0 0 40px #1e2f58, 0 0 20px #1e2f58;
+}
+
+.social-top:active{
+    transform: scale(0.98);
 }
 
 .resume-button{
@@ -256,7 +305,7 @@ section {
     padding: 10px 20px;
     border: 0.8px solid var(--light);
     border-radius: 10px;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-left: 50px;
     cursor: pointer;
     letter-spacing: 1px;
@@ -287,14 +336,15 @@ section {
     position: relative;
     width: 100%;
     height: 100%;
-    /* background: yellowgreen; */
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.6s ease;
 }
 
 .home-img .glow-back:hover{
+    transform: scale(1.05);
     box-shadow: 0 0 2px #1e2f58, 0 0 1px #1e2f58, 0 0 20px #1e2f58, 0 0 40px #1e2f58, 0 0 20px #1e2f58;
 }
 
