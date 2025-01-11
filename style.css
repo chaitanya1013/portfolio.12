@@ -419,6 +419,31 @@ section {
     margin-bottom: 1rem;
 }
 
+.footer-part .social a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 20px;
+    color: whitesmoke;
+    text-decoration: none;
+    transition: all 0.6s ease;
+}
+
+.footer-part .social a:hover{
+    background-color: var(--nav-bg0);
+    transform: scale(1.05);
+    box-shadow: 0 0 2px #1e2f58, 0 0 1px #1e2f58, 0 0 20px #1e2f58, 0 0 40px #1e2f58, 0 0 20px #1e2f58;
+}
+
+.footer-part .social a:active{
+    transform: scale(0.98);
+}
+
 .footer-part ul.list {
     list-style: none;
     padding: 0;
